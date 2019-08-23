@@ -5,7 +5,7 @@
     "keywords": ["PHP Iterator"],	
 	"homepage": "https://github.com/broxman/iterator",
     "type": "library",
-    "version": "1.0.0", 	
+    "stability":"stable",
     "authors": [
         {
             "name": "Eduard Abdrakhmanov",
