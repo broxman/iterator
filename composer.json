@@ -1,0 +1,27 @@
+{
+    "name": "broxman/iterator",
+    "description": "Iterator",
+    "license": "MIT",
+    "keywords": ["PHP Iterator"],	
+	"homepage": "https://github.com/broxman/iterator",
+    "type": "library",
+    "version": "1.0.0", 	
+    "authors": [
+        {
+            "name": "Eduard Abdrakhmanov",
+            "email": "broxman@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7"
+    },	
+    "support": {
+        "issues": "https://github.com/broxman/iterator/issues"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Broxman\\Iterator\\": "src/"
+        }
+    }	
+} 
