@@ -21,7 +21,7 @@ class PageIterator implements \Iterator
         $this->_items = $items;
         if (count($this->_items)){
             $this->_index = 0;
-            $this->_pageNumber = 1;
+            $this->_pageNumber = 0;
         }
         $this->_pager = $pager;
     }
@@ -43,7 +43,7 @@ class PageIterator implements \Iterator
      */
     public function key()
     {
-        return ($this->_pageNumber - 1) * $this->_pager->getPageSize() + $this->_index;
+        return $this->_pageNumber * $this->_pager->getPageSize() + $this->_index;
     }
 
     /**
@@ -59,8 +59,8 @@ class PageIterator implements \Iterator
      */
     public function rewind()
     {
-        if ($this->_pageNumber !== 1) {
-            $this->_pageNumber = 1;
+        if ($this->_pageNumber !== 0) {
+            $this->_pageNumber = 0;
             $this->_loadPage();
         }
     }
